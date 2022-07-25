@@ -34,19 +34,18 @@ function app_toggle(name, secondName)
 end
 
 local event_map = {
-    { key = 'r', mod = 'option', func = hs.reload },
     -- app_toggle
     { key = ',', mod = '', func = app_toggle('System Preferences'), msg = 'System Preferences' },
-    { key = 'n', mod = "option", func = app_toggle('Notion') },
+    { key = 'n', mod = "", func = app_toggle('Notion') },
     { key = 'm', mod = "", func = app_toggle('Google Chat') },
     { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('discord') },
     { key = 'f', mod = "", func = app_toggle('Figma') },
-    { key = 'f', mod = "option", func = app_toggle('Finder') },
     { key = 'k', mod = "", func = app_toggle('KakaoTalk') },
     { key = 'p', mod = "", func = app_toggle('PDF Expert') },
-    { key = 'r', mod = "", func = app_toggle('draw.io') },
+    { key = 'r', mod = "cmd", func = app_toggle('draw.io') },
     { key = 's', mod = "", func = app_toggle('Slack') },
+    { key = 's', mod = "shift", func = app_toggle('Simulator') },
     { key = 'v', mod = "", func = app_toggle('Visual Studio Code') },
     { key = 't', mod = "", func = app_toggle('TickTick') },
     { key = 'y', mod = "", func = app_toggle('YT Music') },
@@ -59,7 +58,7 @@ function event_runner(func_table)
         local key = v['key']
         local mod = v['mod']
         local func = v['func']
-        hs.hotkey.bind({ 'cmd', 'shift', mod }, key, func)
+        hs.hotkey.bind({ 'option', mod }, key, func)
     end
 end
 
