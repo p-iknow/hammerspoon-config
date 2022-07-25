@@ -34,7 +34,7 @@ function app_toggle(name, secondName)
 end
 
 local event_map = {
-    { key = 'r', mod = 'shift', func = hs.reload },
+    { key = 'r', mod = 'option', func = hs.reload },
     -- app_toggle
     { key = ',', mod = '', func = app_toggle('System Preferences'), msg = 'System Preferences' },
     { key = 'n', mod = "", func = app_toggle('Notion') },
@@ -42,7 +42,7 @@ local event_map = {
     { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('discord') },
     { key = 'f', mod = "", func = app_toggle('Figma') },
-    { key = 'f', mod = "shift", func = app_toggle('Finder') },
+    { key = 'f', mod = "option", func = app_toggle('Finder') },
     { key = 'k', mod = "", func = app_toggle('KakaoTalk') },
     { key = 'p', mod = "", func = app_toggle('PDF Expert') },
     { key = 'r', mod = "", func = app_toggle('draw.io') },
@@ -57,7 +57,7 @@ function event_runner(func_table)
         local key = v['key']
         local mod = v['mod']
         local func = v['func']
-        hs.hotkey.bind({ 'option', mod }, key, func)
+        hs.hotkey.bind({ 'cmd', 'shift', mod }, key, func)
     end
 end
 
