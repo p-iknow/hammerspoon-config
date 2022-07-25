@@ -37,7 +37,7 @@ local event_map = {
     { key = 'r', mod = 'option', func = hs.reload },
     -- app_toggle
     { key = ',', mod = '', func = app_toggle('System Preferences'), msg = 'System Preferences' },
-    { key = 'n', mod = "", func = app_toggle('Notion') },
+    { key = 'n', mod = "option", func = app_toggle('Notion') },
     { key = 'm', mod = "", func = app_toggle('Google Chat') },
     { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('discord') },
@@ -48,6 +48,8 @@ local event_map = {
     { key = 'r', mod = "", func = app_toggle('draw.io') },
     { key = 's', mod = "", func = app_toggle('Slack') },
     { key = 'v', mod = "", func = app_toggle('Visual Studio Code') },
+    { key = 't', mod = "", func = app_toggle('TickTick') },
+    { key = 'y', mod = "", func = app_toggle('YT Music') },
     { key = 'space', mod = "", func = app_toggle('iTerm') },
 }
 
