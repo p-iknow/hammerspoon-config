@@ -2,10 +2,7 @@
 
 -- require('luarocks.loader')
 -- require('modules.mouse'):init('f16')
-local inputEnglish = "com.apple.nlayout.ABC"
-local inputKorean = "com.apple.keylayout.2SetHangul"
-
-
+require('modules.inputsource_aurora')
 
 hs.window.animationDuration = 0
 
@@ -40,7 +37,7 @@ local event_map = {
     { key = 'm', mod = "", func = app_toggle('Google Chat') },
     { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('discord') },
-    { key = 'f', mod = "", func = app_toggle('Figma') },
+    { key = 'f', mod = "shift", func = app_toggle('Figma') },
     { key = 'k', mod = "", func = app_toggle('KakaoTalk') },
     { key = 'p', mod = "", func = app_toggle('PDF Expert') },
     { key = 'r', mod = "cmd", func = app_toggle('draw.io') },
