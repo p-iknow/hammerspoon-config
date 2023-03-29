@@ -34,17 +34,17 @@ local event_map = {
     -- app_toggle
     { key = ',', mod = '', func = app_toggle('System Preferences'), msg = 'System Preferences' },
     { key = 'n', mod = "", func = app_toggle('Notion') },
-    { key = 'm', mod = "", func = app_toggle('Google Chat') },
+    { key = 'a', mod = "", func = app_toggle('Safari Technology Preview')},
+    { key = 'm', mod = "", func = app_toggle('Simulator') },
     { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('Deepl') },
     { key = 'i', mod = "", func = app_toggle('Figma') },
     { key = 'k', mod = "", func = app_toggle('Keynote') },
     { key = 'p', mod = "", func = app_toggle('PDF Expert') },
-    { key = 'r', mod = "cmd", func = app_toggle('draw.io') },
     { key = 's', mod = "", func = app_toggle('Slack') },
-    { key = 's', mod = "shift", func = app_toggle('Simulator') },
     { key = 'v', mod = "", func = app_toggle('Visual Studio Code') },
     { key = 't', mod = "", func = app_toggle('TickTick') },
+
     { key = 'y', mod = "", func = app_toggle('YT Music') },
     { key = 'space', mod = "", func = app_toggle('iTerm') },
 }
