@@ -36,7 +36,7 @@ local event_map = {
     { key = 'n', mod = "", func = app_toggle('Notion') },
     { key = 'a', mod = "", func = app_toggle('Safari')},
     { key = 'm', mod = "", func = app_toggle('Simulator') },
-    { key = 'g', mod = "", func = app_toggle('Google Chrome') },
+    { key = 'c', mod = "", func = app_toggle('Google Chrome') },
     { key = 'd', mod = "", func = app_toggle('Deepl') },
     { key = 'f', mod = "", func = app_toggle('Figma') },
     { key = 'f1', mod = "", func = app_toggle('Finder') },
