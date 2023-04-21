@@ -46,10 +46,11 @@ local event_map = {
     { key = 'v', mod = "", func = app_toggle('Visual Studio Code') },
     { key = 't', mod = "", func = app_toggle('TickTick') },
     { key = 'y', mod = "", func = app_toggle('YT Music') },
+    { key = 'g', mod = "", func = app_toggle('MacGPT') },
     { key = 'f2', mod = "", func = app_toggle('KakaoTalk') },
     { key = 'space', mod = "", func = app_toggle('iTerm') },
+    { key = 'w', mod = "", func = app_toggle('WorkSpaces') },
 }
-
 function event_runner(func_table)
     for i, v in pairs(func_table) do
         -- hs.alert.show(i)
