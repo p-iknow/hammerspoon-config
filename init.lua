@@ -45,9 +45,10 @@ local event_map = {
     { key = 'v',     mod = "", func = app_toggle('Visual Studio Code') },
     { key = 't',     mod = "", func = app_toggle('TickTick') },
     { key = 'y',     mod = "", func = app_toggle('YT Music') },
-    { key = 'g',     mod = "", func = app_toggle('MacGPT') },
+    { key = 'g',     mod = "", func = app_toggle('ChatGpt') },
+    { key = 'j',     mod = "", func = app_toggle('JIRA') },
     { key = 'f1',    mod = "", func = app_toggle('Finder') },
-    { key = 'f2',    mod = "", func = app_toggle('KakaoTalk') },
+    { key = 'f2',    mod = "", func = app_toggle('Google Calendar') },
     { key = 'space', mod = "", func = app_toggle('iTerm') },
     { key = 'w',     mod = "", func = app_toggle('WorkSpaces') },
 }
