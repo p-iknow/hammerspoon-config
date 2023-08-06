@@ -2,8 +2,8 @@
 
 local boxes = {}
 local inputEnglish = "com.apple.keylayout.ABC"
-local box_height = 40
-local box_alpha = 0.23
+local box_height = 28
+local box_alpha = 0.15
 local GREEN = hs.drawing.color.hammerspoon.osx_yellow
 
 -- 입력소스 변경 이벤트에 이벤트 리스너를 달아준다
