@@ -2,7 +2,7 @@
 
 local boxes = {}
 local inputEnglish = "com.apple.keylayout.ABC"
-local box_height = 28
+local box_height = 40
 local box_alpha = 0.23
 local GREEN = hs.drawing.color.hammerspoon.osx_yellow
 
@@ -22,8 +22,6 @@ function enable_show()
 		local box = newBox()
 		draw_rectangle(box, frame.x, frame.y, frame.w, box_height, GREEN)
 		table.insert(boxes, box)
-
-
 	end)
 end
 
