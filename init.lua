@@ -32,33 +32,36 @@ end
 
 local event_map = {
     -- app_toggle
-    { key = ',',     mod = '', func = app_toggle('System Preferences'), msg = 'System Preferences' },
-    { key = 'n',     mod = "", func = app_toggle('Notion') },
-    { key = 'a',     mod = "", func = app_toggle('Safari') },
-    { key = 'm',     mod = "", func = app_toggle('Simulator') },
-    { key = 'c',     mod = "", func = app_toggle('Google Chrome') },
-    { key = 'd',     mod = "", func = app_toggle('Deepl') },
-    { key = 'f',     mod = "", func = app_toggle('Figma') },
-    { key = 'k',     mod = "", func = app_toggle('Keynote') },
-    { key = 'p',     mod = "", func = app_toggle('PDF Expert') },
-    { key = 's',     mod = "", func = app_toggle('Slack') },
-    { key = 'v',     mod = "", func = app_toggle('Visual Studio Code') },
-    { key = 't',     mod = "", func = app_toggle('TickTick') },
-    { key = 'y',     mod = "", func = app_toggle('YT Music') },
-    { key = 'g',     mod = "", func = app_toggle('ChatGpt') },
-    { key = 'j',     mod = "", func = app_toggle('JIRA') },
-    { key = 'f1',    mod = "", func = app_toggle('Finder') },
-    { key = 'f2',    mod = "", func = app_toggle('Google Calendar') },
-    { key = 'space', mod = "", func = app_toggle('iTerm') },
-    { key = 'w',     mod = "", func = app_toggle('WorkSpaces') },
+    { key = ',',     mod1 = "", mod2 = "", func = app_toggle('System Preferences'), msg = 'System Preferences' },
+    { key = 'n',     mod1 = "", mod2 = "", func = app_toggle('Notion') },
+    { key = 'a',     mod1 = "", mod2 = "", func = app_toggle('Safari') },
+    { key = 'm',     mod1 = "", mod2 = "", func = app_toggle('Simulator') },
+    { key = 'c',     mod1 = "", mod2 = "", func = app_toggle('Google Chrome') },
+    { key = 'd',     mod1 = "", mod2 = "", func = app_toggle('Deepl') },
+    { key = 'f',     mod1 = "", mod2 = "", func = app_toggle('Figma') },
+    { key = 'k',     mod1 = "", mod2 = "", func = app_toggle('Keynote') },
+    { key = 'p',     mod1 = "", mod2 = "", func = app_toggle('PDF Expert') },
+    { key = 's',     mod1 = "", mod2 = "", func = app_toggle('Slack') },
+    { key = 'v',     mod1 = "", mod2 = "", func = app_toggle('Visual Studio Code') },
+    { key = 't',     mod1 = "", mod2 = "", func = app_toggle('TickTick') },
+    { key = 'y',     mod1 = "", mod2 = "", func = app_toggle('YT Music') },
+    { key = 'g',     mod1 = "", mod2 = "", func = app_toggle('ChatGpt') },
+    { key = 'j',     mod1 = "", mod2 = "", func = app_toggle('JIRA') },
+    { key = 'f1',    mod1 = "", mod2 = "", func = app_toggle('Finder') },
+    { key = 'f2',    mod1 = "", mod2 = "", func = app_toggle('Google Calendar') },
+    { key = 'space', mod1 = "", mod2 = "", func = app_toggle('iTerm') },
+    { key = 'w',     mod1 = "", mod2 = "", func = app_toggle('WorkSpaces') },
+    { key = 'f12',   mod1 = "", mod2 = "", func = app_toggle('GoLand') },
+    { key = 'f11',   mod1 = "", mod2 = "", func = app_toggle('WebStorm') },
 }
 function event_runner(func_table)
     for i, v in pairs(func_table) do
         -- hs.alert.show(i)
         local key = v['key']
-        local mod = v['mod']
+        local mod1 = v['mod1']
+        local mod2 = v['mod2']
         local func = v['func']
-        hs.hotkey.bind({ 'option', mod }, key, func)
+        hs.hotkey.bind({ 'alt', mod1, mod2 }, key, func)
     end
 end
 
