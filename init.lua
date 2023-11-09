@@ -51,8 +51,11 @@ local event_map = {
     { key = 'f2',    mod1 = "", mod2 = "", func = app_toggle('Google Calendar') },
     { key = 'space', mod1 = "", mod2 = "", func = app_toggle('iTerm') },
     { key = 'w',     mod1 = "", mod2 = "", func = app_toggle('WorkSpaces') },
-    { key = 'f12',   mod1 = "", mod2 = "", func = app_toggle('GoLand') },
+    { key = 'f8',    mod1 = "", mod2 = "", func = app_toggle('Sourcegraph') },
+    { key = 'f9',    mod1 = "", mod2 = "", func = app_toggle('Android Studio') },
+    { key = 'f10',   mod1 = "", mod2 = "", func = app_toggle('DataGrip') },
     { key = 'f11',   mod1 = "", mod2 = "", func = app_toggle('WebStorm') },
+    { key = 'f12',   mod1 = "", mod2 = "", func = app_toggle('GoLand') },
 }
 function event_runner(func_table)
     for i, v in pairs(func_table) do
